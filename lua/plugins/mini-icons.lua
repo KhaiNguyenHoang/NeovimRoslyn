@@ -3,8 +3,6 @@ return {
   "echasnovski/mini.icons",
   optional = true,
   opts = {
-    filetype = {
-      cs = { glyph = "", hl = "MiniIconsGreen" },
-    },
+    filetype = {},
   },
 }

@@ -12,7 +12,7 @@ return {
       openrouter = {
         __inherited_from = "openai",
         endpoint = "https://openrouter.ai/api/v1",
-        model = "openrouter/sonoma-sky-alpha",
+        model = "x-ai/grok-4-fast:free",
         api_key_name = "OPENROUTER_API_KEY",
         extra_request_body = {
           temperature = 0.7,

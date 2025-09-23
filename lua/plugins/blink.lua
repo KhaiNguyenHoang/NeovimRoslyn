@@ -99,6 +99,7 @@ return {
           },
         },
       },
+      min_keyword_length = 1,
     },
     cmdline = {
       keymap = {

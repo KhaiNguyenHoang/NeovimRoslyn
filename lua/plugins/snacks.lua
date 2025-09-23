@@ -282,6 +282,20 @@ return {
       doc = {
         enabled = false,
       },
+      ---@alias snacks.image.Size {width: 20, height: 20}
+      ---@alias snacks.image.Pos {[1]: 20, [2]: 20}
+      ---@alias snacks.image.Loc snacks.image.Pos|snacks.image.Size|{zindex?: 5}
+      ---@alias snacks.image.Type "image"|"math"|"chart"
+      ---@class snacks.image.Config
+      ---@field enabled? boolean enable image viewer
+      ---@field wo? vim.wo|{} options for windows showing the image
+      ---@field bo? vim.bo|{} options for the image buffer
+      ---@field formats? string[]
+      --- Resolves a reference to an image with src in a file (currently markdown only).
+      --- Return the absolute path or url to the image.
+      --- When `nil`, the path is resolved relative to the file.
+      ---@field resolve? fun(file: string, src: string): string?
+      ---@field convert? snacks.image.convert.Config
       formats = {
         "png",
         "jpg",

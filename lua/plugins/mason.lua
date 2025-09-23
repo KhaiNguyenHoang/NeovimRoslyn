@@ -1,6 +1,17 @@
 ---@type LazySpec
 return {
   {
+    "williamboman/mason.nvim",
+    opts = {
+      ui = {
+        keymaps = {
+          -- đổi Ctrl+F sang Ctrl+L để lọc ngôn ngữ
+          apply_language_filter = "<C-h>",
+        },
+      },
+    },
+  },
+  {
     "WhoIsSethDaniel/mason-tool-installer.nvim",
     optional = true,
     opts = {
